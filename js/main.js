@@ -33,11 +33,11 @@
       this.vx = rand(-0.18, 0.18);
       this.vy = rand(-0.18, 0.18);
       this.a  = rand(0.1, 0.55);
-      // colour: mix purple and cyan
+      // colour: mix crimson and amber
       const mix = Math.random();
       this.color = mix > 0.5
-        ? `rgba(159,103,255,${this.a})`
-        : `rgba(103,232,249,${this.a})`;
+        ? `rgba(251,113,133,${this.a})`
+        : `rgba(253,186,116,${this.a})`;
     }
     update() {
       this.x += this.vx;
@@ -63,7 +63,7 @@
         const d  = Math.sqrt(dx * dx + dy * dy);
         if (d < limit) {
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(124,58,237,${0.08 * (1 - d / limit)})`;
+          ctx.strokeStyle = `rgba(225,29,72,${0.08 * (1 - d / limit)})`;
           ctx.lineWidth = 0.5;
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
