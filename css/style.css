@@ -84,8 +84,8 @@ button { font-family: var(--fb); }
   background: rgba(255,255,255,.08); opacity: 0; transition: var(--tr);
 }
 .btn:hover::before { opacity: 1; }
-.bp   { background: var(--p); color: #fff; box-shadow: 0 4px 20px rgba(220,38,38,.4); }
-.bp:hover  { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(220,38,38,.55); }
+.btn.bp   { background: var(--p); color: #fff; box-shadow: 0 4px 20px rgba(220,38,38,.4); }
+.btn.bp:hover  { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(220,38,38,.55); }
 .bg   { background: transparent; color: var(--txt); border: 1px solid var(--border); }
 .bg:hover  { border-color: var(--p-lt); color: var(--p-lt); }
 .bo   { background: transparent; color: var(--txt); border: 1px solid var(--border); }
