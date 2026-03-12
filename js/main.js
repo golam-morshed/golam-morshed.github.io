@@ -33,10 +33,10 @@
       this.vx = rand(-0.18, 0.18);
       this.vy = rand(-0.18, 0.18);
       this.a  = rand(0.1, 0.55);
-      // colour: mix crimson and amber
+      // colour: mix red and amber
       const mix = Math.random();
       this.color = mix > 0.5
-        ? `rgba(251,113,133,${this.a})`
+        ? `rgba(248,113,113,${this.a})`
         : `rgba(253,186,116,${this.a})`;
     }
     update() {
@@ -63,7 +63,7 @@
         const d  = Math.sqrt(dx * dx + dy * dy);
         if (d < limit) {
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(225,29,72,${0.08 * (1 - d / limit)})`;
+          ctx.strokeStyle = `rgba(220,38,38,${0.08 * (1 - d / limit)})`;
           ctx.lineWidth = 0.5;
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
@@ -232,7 +232,7 @@ if (form) {
 
     window.location.href = `mailto:golamdotmorshed@gmail.com?subject=${sub}&body=${body}`;
     formNote.textContent = '✓ Opening your email client. You can also reach me directly at golamdotmorshed@gmail.com';
-    formNote.style.color = '#a78bfa';
+    formNote.style.color = '#f87171';
   });
 }
 
